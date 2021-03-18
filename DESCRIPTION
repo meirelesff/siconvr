@@ -17,5 +17,5 @@ Imports:
     httr,
     magrittr,
     tibble,
-    utils,
-    dplyr
+    dplyr,
+    cli

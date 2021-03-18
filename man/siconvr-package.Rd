@@ -4,7 +4,7 @@
 \name{siconvr-package}
 \alias{siconvr}
 \alias{siconvr-package}
-\title{\pkg{siconvr} is a package design to extract and clean data on federal targeted
+\title{\pkg{siconvr} is a package designed to extract and clean data on federal targeted
 transfers in Brazil from SICONV (Sistema de Gestao de Convenios e Contratos de Repasse,
 in Portuguese).}
 \description{

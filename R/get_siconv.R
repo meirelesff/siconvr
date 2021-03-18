@@ -18,15 +18,21 @@
 #' data are returned with uncommon characters.
 #' 
 #' @param cache Should the function maintain a local copy of the data? To save
-#' both time and SICONV's server resources, this defaults to `TRUE`.
+#' both time and SICONV's server resources, this defaults to `TRUE`. Data is 
+#' stored as a zipfile in the foleer "cache" in the working directory (avoid
+#' changing files' names inside this folder).
+#' 
+#' @param verbose Should the function display messages and progress bar? Defaults
+#' to `TRUE`.
 #' 
 #' @export
 #' @examples 
 #' \dontrun{df <- get_siconv(dataset = "proposals")}
 
-get_siconv <- function(dataset = NULL, encoding = "UTF-8", cache = TRUE){
+get_siconv <- function(dataset = NULL, encoding = "UTF-8", cache = TRUE, verbose = TRUE){
   
   # Inputs
+  if(!is.logical(verbose)) stop("'verbose' must be logical.")
   if(!is.logical(cache)) stop("'cache' must be logical.")
 
   # URLs
@@ -35,18 +41,31 @@ get_siconv <- function(dataset = NULL, encoding = "UTF-8", cache = TRUE){
   if(arq == "Invalid") stop("Invalid 'dataset' argument. Please, check the documentation and try again.")
   link <- paste0(base_url, arq)
   
-  # Download
-  temp_dir <- tempdir()
-  temp <- paste0(temp_dir, "/", arq)
-  x <- httr::GET(url, httr::write_disk(temp, overwrite = TRUE), httr::progress("down"))
+  # Perform actions based on 'cache'
+  if(cache & !file.exists(file.path("cache", arq))){
+    
+    dest_folder <- "cache"
+    if(!dir.exists("cache")) dir.create("cache")
+    dest_file <- retrieve_siconv(link, dest_folder, arq, verbose)
+    res <- read_siconv(dest_file, dest_folder, encoding)
+  } 
+  else if(cache & file.exists(file.path("cache", arq))){
+    
+    if(verbose) cli::cli_alert_info("Retrieving data from cache")
+    dest_folder <- "cache"
+    dest_file <- file.path(dest_folder, arq)
+    res <- read_siconv(dest_file, dest_folder, encoding)
+  }
+  else if(!cache){
+    
+    dest_folder <- tempdir()
+    dest_file <- retrieve_siconv(link, dest_folder, arq, verbose)
+  }
   
-  # Status
-  httr::stop_for_status(x, task = "download files from Siconv. Try again later")
-  
-  # Read
-  res <- data.table::fread(utils::unzip(temp, exdir = temp_dir), fill = T, encoding = encoding)
-  unlink(temp_dir, recursive = TRUE)
+  # Remove temp dirs if needed
+  if(!cache) unlink(dest_folder, force = TRUE, recursive = TRUE)
   
   # Return
-  return(res)
+  return(tibble::as_tibble(res))
 }
+

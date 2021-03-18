@@ -4,7 +4,7 @@
 \alias{get_siconv}
 \title{Retrieve cleaned data from SICONV}
 \usage{
-get_siconv(dataset = NULL, encoding = "UTF-8", cache = TRUE)
+get_siconv(dataset = NULL, encoding = "UTF-8", cache = TRUE, verbose = TRUE)
 }
 \arguments{
 \item{dataset}{A \code{string} indicating the dataset to retrieve. Valid options:
@@ -20,7 +20,12 @@ might need to change this option to other valid options (e.g., "latin1") if
 data are returned with uncommon characters.}
 
 \item{cache}{Should the function maintain a local copy of the data? To save
-both time and SICONV's server resources, this defaults to \code{TRUE}.}
+both time and SICONV's server resources, this defaults to \code{TRUE}. Data is
+stored as a zipfile in the foleer "cache" in the working directory (avoid
+changing files' names inside this folder).}
+
+\item{verbose}{Should the function display messages and progress bar? Defaults
+to \code{TRUE}.}
 }
 \description{
 \code{get_siconv()} is the package's workhorse. It downloads, cleans, and
