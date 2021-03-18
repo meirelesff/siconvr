@@ -1,3 +1,6 @@
 ^siconvr\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^appveyor\.yml$
+^\.travis\.yml$
+^\.github$

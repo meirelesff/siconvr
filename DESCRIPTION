@@ -1,15 +1,21 @@
 Package: siconvr
 Title: A Scraper for Brazilian SICONV
-Version: 1.0.0
+Version: 0.0.1
 Authors@R: c(
-    person("Fernando", "Meireles", , "fernando.meireles@iesp.uerj.br", c("aut", "cre"), c(ORCID = "0000-0002-7027-2058")),
-    person("Marcus", "Vinícius de Sá", , "silvadenisson@ufmg.br", c("aut"), c(ORCID = "0000-0003-2771-8146"))
+    person("Fernando", "Meireles", , "fmeireles@ufmg.br", c("aut", "cre"), c(ORCID = "0000-0002-7027-2058")),
+    person("Marcus", "Vinícius de Sá", , "mvdstorres@gmail.com", c("aut"), c(ORCID = "0000-0000-0000-0000"))
     )
 Description: Scrapes and cleans data on targeted public investments from Federal Government in Brazil
-    available at <https://siconv.com.br/>. Data includes projects' details, transfers' amounts,
-    among many others.
+    available at <http://plataformamaisbrasil.gov.br/>.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Imports: 
+    data.table,
+    httr,
+    magrittr,
+    tibble,
+    utils,
+    dplyr
