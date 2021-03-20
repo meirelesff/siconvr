@@ -1,12 +1,12 @@
 Package: siconvr
-Title: A Scraper for Brazilian SICONV
+Title: A Scraper for Plataforma +Brasil (SICONV)
 Version: 0.0.1
 Authors@R: c(
     person("Fernando", "Meireles", , "fmeireles@ufmg.br", c("aut", "cre"), c(ORCID = "0000-0002-7027-2058")),
     person("Marcus", "Vinícius de Sá", , "mvdstorres@gmail.com", c("aut"), c(ORCID = "0000-0000-0000-0000"))
     )
-Description: Scrapes and cleans data on targeted public investments from Federal Government in Brazil
-    available at <http://plataformamaisbrasil.gov.br/>.
+Description: Scrapes and cleans data on targeted public investments from Plataforma +Brasil (SICONV) <http://plataformamaisbrasil.gov.br/>, 
+    the system used to request, execute, and monitor federal discretionary transfers in Brazil.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true

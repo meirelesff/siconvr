@@ -4,8 +4,25 @@ siconv_arqs <- function(dataset){
   if(is.null(dataset)) return("siconv_programa.csv.zip")
   dplyr::case_when(
 
-    dataset == "programs" ~ "siconv_programa.csv.zip",
-    dataset == "proposals" ~"siconv_programa_proposta.csv.zip",
+    dataset == "programas" ~ "siconv_programa.csv.zip",
+    dataset == "programas_propostas" ~ "siconv_programa_proposta.csv.zip",
+    dataset == "propostas" ~ "siconv_proposta.csv.zip",
+    dataset == "convenios" ~ "siconv_convenio.csv.zip",
+    dataset == "emendas" ~ "siconv_emenda.csv.zip",
+    dataset == "planos" ~ "siconv_plano_aplicacao.csv.zip",
+    dataset == "empenhos" ~ "siconv_empenho.csv.zip",
+    dataset == "desembolsos" ~ "siconv_desembolso.csv.zip",
+    dataset == "obtv" ~ "siconv_obtv_convenente.csv.zip",
+    dataset == "historico" ~ "siconv_historico_situacao.csv.zip",
+    dataset == "ingresso_contrapartida" ~ "siconv_ingresso_contrapartida.csv.zip",
+    dataset == "aditivos" ~ "siconv_termo_aditivo.csv.zip",
+    dataset == "crono_metas" ~ "siconv_meta_crono_fisico.csv.zip",
+    dataset == "cronogramas" ~ "siconv_etapa_crono_fisico.csv.zip",
+    dataset == "consorcios" ~ "siconv_consorcios.csv.zip",
+    dataset == "empenhos_desembolsos" ~ "siconv_empenho_desembolso.csv.zip",
+    dataset == "proponentes" ~ "siconv_proponentes.csv.zip",
+    dataset == "cronograma_desembolsos" ~ "siconv_cronograma_desembolso.csv.zip",
+    dataset == "justificativas" ~ "siconv_justificativas_proposta.csv.zip",
     TRUE ~ "Invalid"
   )
 }

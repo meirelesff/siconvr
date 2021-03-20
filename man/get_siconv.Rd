@@ -9,11 +9,29 @@ get_siconv(dataset = NULL, encoding = "UTF-8", cache = TRUE, verbose = TRUE)
 \arguments{
 \item{dataset}{A \code{string} indicating the dataset to retrieve. Valid options:
 \itemize{
-\item "programs" -- data on available programs maintained by the Federal Government;
-\item "proposals" -- data on submited proposals to the Federal Government;
+\item "programas" -- data on available programs maintained by the Federal Government;
+\item "programa_proposta" -- keys to match programs and proposals submited to the Federal Government;
+\item "propostas" -- data on proposals submited to the Federal Government;
+\item "convenios" -- data on proposals effectivelly signed by the Federal Governments;
+\item "emendas" -- data on amendments to the the federal budget made by Brazilian Federal Deputies and Senators
+to fund federal transfers;
+\item "planos" -- data on application plans submited to the Federal Government;
+\item "empenhos" -- data on transfers appropriated in the Federal Budget;
+\item "desembolsos" -- data on transfers disbursements by the Federal Government;
+\item "obtv" -- data on payments made to local suppliers and contractors hired to execute funded projects;
+\item "historico" -- proposals' track record;
+\item "ingresso_contrapartida" -- record of counterpart payments;
+\item "aditivos" -- data on contracts' budget addendums;
+\item "crono_metas" -- cronogram of project's goals;
+\item "cronogramas" -- project's execution cronograms;
+\item "consorcios" -- data on proposals where multiple local governments or private entities cooperate to request federal resources;
+\item "empenhos_desembolsos" -- keys to match appropriations and disbursements by Federal Government;
+\item "proponentes" -- data on proposals' proponents;
+\item "cronograma_desembolso" -- cronogram of project's transfers disbursements;
+\item "justificativas" -- proposals' justifications;
 }
 
-When not specified, \code{dataset} defaults to "programs".}
+When not specified, \code{dataset} defaults to "programas".}
 
 \item{encoding}{Encoding used to read raw files. Defaults to "UTF-8", but users
 might need to change this option to other valid options (e.g., "latin1") if
@@ -29,11 +47,11 @@ to \code{TRUE}.}
 }
 \description{
 \code{get_siconv()} is the package's workhorse. It downloads, cleans, and
-returns one of the several datasets maintained by SICONV on federal
+returns one of the several datasets maintained by Plataforma +Brasil on federal
 targeted transfers in Brazil. Under the hoods, the function handles GET requests,
 downloads and stores intermediary files, and reads as fast as possible the data
-to a \link[tibble:tibble-package]{tibble} format convenient for use in analysis.
+to a \code{tibble} format convenient for use in analysis.
 }
 \examples{
-\dontrun{df <- get_siconv(dataset = "proposals")}
+\dontrun{df <- get_siconv(dataset = "propostas")}
 }
