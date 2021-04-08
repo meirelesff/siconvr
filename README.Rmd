@@ -55,7 +55,7 @@ progs <- get_siconv("programas")
 
 Here a list of available datasets one can fetch using `siconvr`:
 
-```{r, echo=FALSE}
+```{r echo=FALSE, message=TRUE, warning=FALSE}
 library(tidyverse)
 
 tribble(
@@ -116,6 +116,6 @@ We welcome suggestions to improve `siconvr`. In case you wish to contribute with
 ## Authors
 
 
-[Fernando Meireles](https://fmeireles.com) e [Marcus Vinícius Torres](http://marcustorresz.github.io/)
+[Fernando Meireles](https://fmeireles.com) e [Marcus Vinícius de Sá Torres](http://marcustorresz.github.io/)
 
 

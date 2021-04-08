@@ -5,7 +5,7 @@ siconv_arqs <- function(dataset){
   dplyr::case_when(
 
     dataset == "programas" ~ "siconv_programa.csv.zip",
-    dataset == "programa_proposta" ~ "siconv_programa_proposta.csv.zip",
+    dataset == "programas_propostas" ~ "siconv_programa_proposta.csv.zip",
     dataset == "propostas" ~ "siconv_proposta.csv.zip",
     dataset == "convenios" ~ "siconv_convenio.csv.zip",
     dataset == "emendas" ~ "siconv_emenda.csv.zip",
@@ -21,7 +21,7 @@ siconv_arqs <- function(dataset){
     dataset == "consorcios" ~ "siconv_consorcios.csv.zip",
     dataset == "empenhos_desembolsos" ~ "siconv_empenho_desembolso.csv.zip",
     dataset == "proponentes" ~ "siconv_proponentes.csv.zip",
-    dataset == "cronograma_desembolso" ~ "siconv_cronograma_desembolso.csv.zip",
+    dataset == "cronograma_desembolsos" ~ "siconv_cronograma_desembolso.csv.zip",
     dataset == "justificativas" ~ "siconv_justificativas_proposta.csv.zip",
     TRUE ~ "Invalid"
   )

@@ -105,5 +105,5 @@ list.
 
 ## Authors
 
-[Fernando Meireles](https://fmeireles.com) e [Marcus Vinícius
+[Fernando Meireles](https://fmeireles.com) e [Marcus Vinícius de Sá
 Torres](http://marcustorresz.github.io/)

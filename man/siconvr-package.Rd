@@ -27,7 +27,7 @@ To check the function's documentation page, run \code{?get_siconv}.
 
 Authors:
 \itemize{
-  \item Marcus Vinícius de Sá \email{mvdstorres@gmail.com} (\href{https://orcid.org/0000-0000-0000-0000}{ORCID})
+  \item Marcus Vinícius de Sá Torres \email{mvdstorres@gmail.com} (\href{https://orcid.org/0000-0002-9647-1418}{ORCID})
 }
 
 }
