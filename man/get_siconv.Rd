@@ -10,7 +10,7 @@ get_siconv(dataset = NULL, encoding = "UTF-8", cache = TRUE, verbose = TRUE)
 \item{dataset}{A \code{string} indicating the dataset to retrieve. Valid options:
 \itemize{
 \item "programas" -- data on available programs maintained by the Federal Government;
-\item "programa_proposta" -- keys to match programs and proposals submited to the Federal Government;
+\item "programas_propostas" -- keys to match programs and proposals submited to the Federal Government;
 \item "propostas" -- data on proposals submited to the Federal Government;
 \item "convenios" -- data on proposals effectivelly signed by the Federal Governments;
 \item "emendas" -- data on amendments to the the federal budget made by Brazilian Federal Deputies and Senators
@@ -27,7 +27,7 @@ to fund federal transfers;
 \item "consorcios" -- data on proposals where multiple local governments or private entities cooperate to request federal resources;
 \item "empenhos_desembolsos" -- keys to match appropriations and disbursements by Federal Government;
 \item "proponentes" -- data on proposals' proponents;
-\item "cronograma_desembolso" -- cronogram of project's transfers disbursements;
+\item "cronograma_desembolsos" -- cronogram of project's transfers disbursements;
 \item "justificativas" -- proposals' justifications;
 }
 

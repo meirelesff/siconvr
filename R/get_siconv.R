@@ -9,7 +9,7 @@
 #' @param dataset A `string` indicating the dataset to retrieve. Valid options:
 #'
 #' * "programas" -- data on available programs maintained by the Federal Government;
-#' * "programa_proposta" -- keys to match programs and proposals submited to the Federal Government;
+#' * "programas_propostas" -- keys to match programs and proposals submited to the Federal Government;
 #' * "propostas" -- data on proposals submited to the Federal Government;
 #' * "convenios" -- data on proposals effectivelly signed by the Federal Governments;
 #' * "emendas" -- data on amendments to the the federal budget made by Brazilian Federal Deputies and Senators
@@ -26,7 +26,7 @@
 #' * "consorcios" -- data on proposals where multiple local governments or private entities cooperate to request federal resources;
 #' * "empenhos_desembolsos" -- keys to match appropriations and disbursements by Federal Government;
 #' * "proponentes" -- data on proposals' proponents;
-#' * "cronograma_desembolso" -- cronogram of project's transfers disbursements;
+#' * "cronograma_desembolsos" -- cronogram of project's transfers disbursements;
 #' * "justificativas" -- proposals' justifications;
 #'
 #' When not specified, `dataset` defaults to "programas".
