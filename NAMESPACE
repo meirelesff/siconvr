@@ -2,5 +2,6 @@
 
 export("%>%")
 export(get_siconv)
+export(show_schema)
 importFrom(magrittr,"%>%")
 importFrom(tibble,tibble)
