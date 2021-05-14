@@ -8,6 +8,6 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
-Makefile
 ^Makefile$
 ^codecov\.yml$
+^cran-comments\.md$

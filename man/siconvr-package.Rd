@@ -22,6 +22,15 @@ and the total amounts transfered.
 
 To check the function's documentation page, run \code{?get_siconv}.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/meirelesff/siconvr}
+  \item \url{https://fmeireles.com/siconvr/}
+  \item Report bugs at \url{https://github.com/meirelesff/siconvr/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Fernando Meireles \email{fmeireles@ufmg.br} (\href{https://orcid.org/0000-0002-7027-2058}{ORCID})
 
