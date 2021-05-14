@@ -94,6 +94,19 @@ tribble(
 ```
 
 
+### Schema
+
+It also possible to check Plataforma +Brasil's database official documentation -- which includes the database diagram and schema, additional information on tables and variables, primary keys, among others -- by using this:
+
+```{r, eval=FALSE}
+show_schema()
+```
+
+
+`show_schema` will extract, read, and open in a web browser the database's docs. Files are saved in the working directory, so one doesn't need to download them again (to just download the docs, set the argument `browser` to `FALSE`).
+
+
+
 ### Options
 
 By default, `get_siconv` tries to read fetched data using `UTF-8` encoding. In case this does not work for you, use the argument `encoding` to change that:
@@ -125,6 +138,6 @@ We welcome suggestions to improve `siconvr`. In case you wish to contribute with
 ## Authors
 
 
-[Fernando Meireles](https://fmeireles.com) e [Marcus Vinícius de Sá Torres](http://marcustorresz.github.io/)
+[Fernando Meireles](https://fmeireles.com/) e [Marcus Vinícius de Sá Torres](https://marcustorresz.github.io/)
 
 

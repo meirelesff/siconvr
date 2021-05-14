@@ -78,6 +78,22 @@ Here a list of available datasets one can fetch using `siconvr`:
 | `cronograma_desembolsos` | cronogram of project’s transfers disbursements                                                                         |
 | `justificativas`         | proposals’ justifications                                                                                              |
 
+### Schema
+
+It also possible to check Plataforma +Brasil’s database official
+documentation – which includes the database diagram and schema,
+additional information on tables and variables, primary keys, among
+others – by using this:
+
+``` r
+show_schema()
+```
+
+`show_schema` will extract, read, and open in a web browser the
+database’s docs. Files are saved in the working directory, so one
+doesn’t need to download them again (to just download the docs, set the
+argument `browser` to `FALSE`).
+
 ### Options
 
 By default, `get_siconv` tries to read fetched data using `UTF-8`
@@ -113,5 +129,5 @@ contributors’ list.
 
 ## Authors
 
-[Fernando Meireles](https://fmeireles.com) e [Marcus Vinícius de Sá
-Torres](http://marcustorresz.github.io/)
+[Fernando Meireles](https://fmeireles.com/) e [Marcus Vinícius de Sá
+Torres](https://marcustorresz.github.io/)
