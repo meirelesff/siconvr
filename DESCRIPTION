@@ -3,10 +3,10 @@ Title: A Scraper for Plataforma +Brasil (SICONV)
 Version: 0.0.1
 Authors@R: c(
     person("Fernando", "Meireles", , "fmeireles@ufmg.br", c("aut", "cre"), c(ORCID = "0000-0002-7027-2058")),
-    person("Marcus", "Vinícius de Sá Torres", , "mvdstorres@gmail.com", c("aut"), c(ORCID = "0000-0002-9647-1418"))
+    person("Marcus", "Vinícius de Sá Torres", , "marcus.torres@ufpe.br", c("aut"), c(ORCID = "0000-0002-9647-1418"))
     )
 Description: Scrapes and cleans data on targeted public investments from Plataforma +Brasil (SICONV) <http://plataformamaisbrasil.gov.br/>, 
-    the system used to request, execute, and monitor federal discretionary transfers in Brazil.
+    the responsible system to request, execute, and monitor federal discretionary transfers in Brazil.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
