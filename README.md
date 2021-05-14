@@ -56,27 +56,27 @@ progs <- get_siconv("programas")
 
 Here a list of available datasets one can fetch using `siconvr`:
 
-| Option                   | Data                                                                                                                   |
-|:-------------------------|:-----------------------------------------------------------------------------------------------------------------------|
-| `programas`              | data on available programs maintained by the Federal Government                                                        |
-| `programas_propostas`    | keys to match programs and proposals submited to the Federal Government                                                |
-| `propostas`              | data on proposals submited to the Federal Government                                                                   |
-| `convenios`              | data on proposals effectivelly signed by the Federal Governments                                                       |
-| `emendas`                | data on amendments to the the federal budget made by Brazilian Federal Deputies and Senators to fund federal transfers |
-| `planos`                 | data on application plans submited to the Federal Government                                                           |
-| `empenhos`               | data on transfers appropriated in the Federal Budget                                                                   |
-| `desembolsos`            | data on transfers disbursements by the Federal Government                                                              |
-| `obtv`                   | data on payments made to local suppliers and contractors hired to execute funded projects                              |
-| `historico`              | proposals’ track record                                                                                                |
-| `ingresso_contrapartida` | record of counterpart payments                                                                                         |
-| `aditivos`               | data on contracts’ budget addendums                                                                                    |
-| `crono_metas`            | cronogram of project’s goals                                                                                           |
-| `cronogramas`            | project’s execution cronograms                                                                                         |
-| `consorcios`             | data on proposals where multiple local governments or private entities cooperate to request federal resources          |
-| `empenhos_desembolsos`   | keys to match appropriations and disbursements by Federal Government                                                   |
-| `proponentes`            | data on proposals’ proponents                                                                                          |
-| `cronograma_desembolsos` | cronogram of project’s transfers disbursements                                                                         |
-| `justificativas`         | proposals’ justifications                                                                                              |
+| Option                   | Data                                                                                                                                                                   |
+|:-------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `programas`              | data on available programs maintained by the Federal Government                                                                                                        |
+| `programas_propostas`    | keys to match programs and proposals submitted to the Federal Government                                                                                               |
+| `propostas`              | data on proposals submitted to the Federal Government                                                                                                                  |
+| `convenios`              | data on proposals effectively accepted situation and amount transferred by the Federal Government                                                                      |
+| `emendas`                | data on federal budget amendments made by Brazilian Federal Deputies and Senators, amount transferred and the transference recipient;                                  |
+| `planos`                 | data on application plans submitted to the Federal Government. This document includes all goods, services and works required by the covenant to accomplish the project |
+| `empenhos`               | data on transfers which the Federal Government has reserved its budget to pay the covenant when the project ends                                                       |
+| `desembolsos`            | data on transfers disbursements by the Federal Government                                                                                                              |
+| `obtv`                   | data on payments made to local suppliers and contractors hired to execute funded projects                                                                              |
+| `historico`              | proposals’ track record                                                                                                                                                |
+| `ingresso_contrapartida` | record of counterpart payments                                                                                                                                         |
+| `aditivos`               | data on contracts’ budget addendums                                                                                                                                    |
+| `crono_metas`            | project’s goals timeline                                                                                                                                               |
+| `cronogramas`            | project’s execution timeline                                                                                                                                           |
+| `consorcios`             | data on proposals where multiple local governments or private entities cooperate to request federal resources                                                          |
+| `empenhos_desembolsos`   | keys to match appropriations and disbursements by Federal Government                                                                                                   |
+| `proponentes`            | data on proposals’ proponents                                                                                                                                          |
+| `cronograma_desembolsos` | project’s transfers disbursements timeline                                                                                                                             |
+| `justificativas`         | proposals’ justifications                                                                                                                                              |
 
 ### Schema
 
@@ -120,12 +120,32 @@ fetching data. This can be done with:
 historico <- get_siconv("historico", verbose = FALSE)
 ```
 
-## Contributions
+## Contributing
 
-We welcome suggestions to improve `siconvr`. In case you wish to
-contribute with code, feel free to push commits to this repository – we
-will be more than happy to acknowledge any assistance by updating our
-contributors’ list.
+We welcome any help to improve `siconvr`. In case you wish to contribute
+with code, use [GitHub Pull
+Requests](https://docs.github.com/pt/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+– we will be more than happy to acknowledge any assistance by updating
+our contributors’ list. Bug reports and suggestions can be done via
+[GitHub issues](https://github.com/meirelesff/siconvr/issues).
+
+## Disclaimer
+
+`siconvr` does not maintain or update Plataforma +Brasil’s database, nor
+does it change or alter fetched data. Therefore, the authors hold no
+responsability for its uses or results.
+
+In case you want to dive deeper into Plataforma +Brasil’s sources and
+update policy, please check the following official sources:
+
+-   [SICONV’s working
+    plan](https://static.fecam.net.br/uploads/1542/arquivos/1302090_MODULO_A_SICONV_6_PLANO_DE_TRABALHO.pdf)
+
+-   [Guide for Delivering
+    Programs](http://plataformamaisbrasil.gov.br/images/Disponibilizacao_de_Programas.pdf)
+
+-   [Financial
+    Guide](http://plataformamaisbrasil.gov.br/images/manuais/M%C3%B3dulo_Fundo_a_Fundo/Tranfer%C3%AAncia/3_Manual_de_Cadastro_de_Conta_Banc%C3%A1ria_e_Empenho_-_Repassador_-_Transfer%C3%AAncia.pdf)
 
 ## Authors
 
