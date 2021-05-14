@@ -8,8 +8,6 @@
 [![CRAN
 status](https://www.r-pkg.org/badges/version/siconvr)](https://CRAN.R-project.org/package=siconvr)
 [![R-CMD-check](https://github.com/meirelesff/siconvr/workflows/R-CMD-check/badge.svg)](https://github.com/meirelesff/siconvr/actions)
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Codecov test
 coverage](https://codecov.io/gh/meirelesff/siconvr/branch/main/graph/badge.svg)](https://codecov.io/gh/meirelesff/siconvr?branch=main)
 [![Travis build
@@ -25,14 +23,20 @@ takes a few seconds.
 
 ## Installing
 
-To install the development version of the package, use:
+Install the package from using:
+
+``` r
+install.packages("siconvr")
+```
+
+To install the package’s development version, use:
 
 ``` r
 if(!require(remotes)) install.packages("remotes")
 remotes::install_github("meirelesff/siconvr")
 ```
 
-Then load the package with:
+Then load it with:
 
 ``` r
 library(siconvr)
@@ -40,9 +44,9 @@ library(siconvr)
 
 ## How to use
 
-Using `siconvr` to fetch data from Plataforma Brasil+ is super easy:
-just pass the type of data you want to the `get_siconv` function and you
-are ready to go. Here’s an example:
+Using `siconvr` to fetch data from Plataforma +Brasil is easy: pass the
+type of data you want to the `get_siconv` function and you are ready to
+go. Here’s an example:
 
 ``` r
 progs <- get_siconv("programas")
@@ -84,10 +88,10 @@ encoding. In case this does not work for you, use the argument
 emp <- get_siconv("empenhos", encoding = "latin-1")
 ```
 
-To save Plataforma Brasil+’ server resources, `get_siconv` stores a
-cache of fetched data in a folder in working directory named `cache` –
-so you don’t need to download the same data again. To avoid cacheing
-date, set `cache` to `FALSE`:
+To save Plataforma +Brasil server resources, `get_siconv` stores a cache
+of fetched data in a folder in working directory named `cache` – so you
+don’t need to download the same data again. To avoid cacheing date, set
+`cache` to `FALSE`:
 
 ``` r
 obtv <- get_siconv("obtv", cache = FALSE)
@@ -103,9 +107,9 @@ historico <- get_siconv("historico", verbose = FALSE)
 ## Contributions
 
 We welcome suggestions to improve `siconvr`. In case you wish to
-contribute with code, feel free to push commits to this repo – we will
-be more than happy to acknowledge any help by updating the contributors’
-list.
+contribute with code, feel free to push commits to this repository – we
+will be more than happy to acknowledge any assistance by updating our
+contributors’ list.
 
 ## Authors
 
