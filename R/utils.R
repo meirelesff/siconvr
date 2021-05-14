@@ -35,7 +35,8 @@ retrieve_siconv <- function(link, dest_folder, arq, verbose){
   if(verbose){
     siconv_url <- "http://plataformamaisbrasil.gov.br/"
     cli::cli_alert_info("Downloading files from {.url {siconv_url}}")
-    x <- httr::GET(link, httr::write_disk(dest_file, overwrite = TRUE), httr::progress("down"))
+    x <- httr::GET(link, httr::write_disk(dest_file, overwrite = TRUE),
+                   httr::progress("down"))
   }
   else{
     x <- httr::GET(link, httr::write_disk(dest_file, overwrite = TRUE))
@@ -56,7 +57,8 @@ read_siconv <- function(dest_file, dest_folder, encoding){
   unz_arq <- utils::unzip(dest_file, exdir = dest_folder)
 
   # Returns
-  res <- data.table::fread(unz_arq, fill = T, encoding = encoding)
+  res <- data.table::fread(unz_arq, fill = TRUE, encoding = encoding,
+                           verbose = FALSE, integer64 = "numeric")
   file.remove(unz_arq)
   return(res)
 }

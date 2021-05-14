@@ -1,6 +1,6 @@
 home:
-  title: An R package to access Plataforma +Brasil data
-  description: Scrapes and cleans data on targeted public investments in Brazil
+  title: siconvr
+  description: An R package to fetch data from Plataforma +Brasil (Siconv)
 
 template:
   params:

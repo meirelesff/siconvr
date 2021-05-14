@@ -76,7 +76,8 @@ get_siconv <- function(dataset = NULL, encoding = "UTF-8", cache = TRUE, verbose
   }
   else if(!cache){
 
-    dest_folder <- tempdir(check = TRUE)
+    dest_folder <- tempfile()
+    if (!dir.create(dest_folder)) stop("Failed to create a temporary directory. Try using 'cache = TRUE'")
     dest_file <- retrieve_siconv(link, dest_folder, arq, verbose)
     res <- read_siconv(dest_file, dest_folder, encoding)
     unlink(dest_folder, force = TRUE, recursive = TRUE)

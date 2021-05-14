@@ -23,7 +23,7 @@ takes a few seconds.
 
 ## Installing
 
-Install the package from using:
+Install the package from CRAN using:
 
 ``` r
 install.packages("siconvr")
