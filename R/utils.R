@@ -61,7 +61,3 @@ read_siconv <- function(dest_file, dest_folder, encoding){
   return(res)
 }
 
-
-
-
-

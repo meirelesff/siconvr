@@ -1,4 +1,4 @@
-#' Retrieve cleaned data from SICONV
+#' Fetch cleaned data from Plataforma +Brasil
 #'
 #' `get_siconv()` is the package's workhorse. It downloads, cleans, and
 #' returns one of the several datasets maintained by Plataforma +Brasil on federal

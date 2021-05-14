@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_siconv.R
 \name{get_siconv}
 \alias{get_siconv}
-\title{Retrieve cleaned data from SICONV}
+\title{Fetch cleaned data from Plataforma +Brasil}
 \usage{
 get_siconv(dataset = NULL, encoding = "UTF-8", cache = TRUE, verbose = TRUE)
 }

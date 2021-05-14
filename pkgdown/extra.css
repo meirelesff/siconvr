@@ -1,0 +1,86 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap');
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Source Sans Pro", "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+    color: inherit;
+}
+
+body {
+    font-family: "Source Sans Pro", "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+
+
+/* Code */
+code, kbd, pre, samp {
+    font-family: "Source Code Pro", Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+pre, code {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-size: 15px;
+}
+
+.kw {
+    color: #f8f8f2;
+}
+
+.fu {
+    color: #bd93f9;
+}
+
+.op {
+    color: #f8f8f2;
+}
+
+.ch, .st {
+    color: #ffb86c;
+}
+
+code a, pre a {
+    color: #ff79c6;
+}
+
+.btn-primary, .btn-primary:hover {
+    color: #ffffff;
+    background-color: #8f2a43;
+    border-color: #8f2a43;
+}
+
+/* Navbar */
+.navbar-default {
+    background-color: #8f2a43;
+    border-color: #8f2a43;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #ffffff;
+    background-color: #a04058;
+}
+
+.label-default {
+    background-color: #9e3e56;
+}
+
+
+/* Links */
+a {
+    color: #8f2a43;
+}
+
+a:hover, a:focus {
+    color: #8f2a43;
+    text-decoration: underline;
+}
+

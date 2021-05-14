@@ -19,3 +19,7 @@ Imports:
     tibble,
     dplyr,
     cli
+Suggests: 
+    testthat (>= 3.0.0),
+    covr
+Config/testthat/edition: 3
