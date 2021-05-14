@@ -10,3 +10,4 @@
 ^pkgdown$
 Makefile
 ^Makefile$
+^codecov\.yml$

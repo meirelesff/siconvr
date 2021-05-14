@@ -10,6 +10,8 @@ status](https://www.r-pkg.org/badges/version/siconvr)](https://CRAN.R-project.or
 [![R-CMD-check](https://github.com/meirelesff/siconvr/workflows/R-CMD-check/badge.svg)](https://github.com/meirelesff/siconvr/actions)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Codecov test
+coverage](https://codecov.io/gh/meirelesff/siconvr/branch/main/graph/badge.svg)](https://codecov.io/gh/meirelesff/siconvr?branch=main)
 <!-- badges: end -->
 
 `siconvr` is an R package designed to fetch and clean data on federal
@@ -47,6 +49,15 @@ progs <- get_siconv("programas")
 ### Available datasets
 
 Here a list of available datasets one can fetch using `siconvr`:
+
+    #> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.0 ──
+    #> ✓ ggplot2 3.3.3     ✓ purrr   0.3.4
+    #> ✓ tibble  3.1.1     ✓ dplyr   1.0.6
+    #> ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+    #> ✓ readr   1.4.0     ✓ forcats 0.5.1
+    #> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    #> x dplyr::filter() masks stats::filter()
+    #> x dplyr::lag()    masks stats::lag()
 
 | Option                   | Data                                                                                                                   |
 |:-------------------------|:-----------------------------------------------------------------------------------------------------------------------|
