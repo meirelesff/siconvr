@@ -9,24 +9,24 @@
 #' @param dataset A `string` indicating the dataset to retrieve. Valid options:
 #'
 #' * "programas" -- data on available programs maintained by the Federal Government;
-#' * "programas_propostas" -- keys to match programs and proposals submited to the Federal Government;
-#' * "propostas" -- data on proposals submited to the Federal Government;
-#' * "convenios" -- data on proposals effectivelly signed by the Federal Governments;
-#' * "emendas" -- data on amendments to the the federal budget made by Brazilian Federal Deputies and Senators
-#' to fund federal transfers;
-#' * "planos" -- data on application plans submited to the Federal Government;
-#' * "empenhos" -- data on transfers appropriated in the Federal Budget;
+#' * "programas_propostas" -- keys to match programs and proposals submitted to the Federal Government;
+#' * "propostas" -- data on proposals submitted to the Federal Government;
+#' * "convenios" -- data on proposals effectively accepted situation and amount transferred by the Federal Government;
+#' * "emendas" -- data on federal budget amendments made by Brazilian Federal Deputies and Senators, amount transferred and the transference recipient;
+#' * "planos" -- data on application plans submitted to the Federal Government. This document includes all goods, services and works required
+#'    by the covenant to accomplish the project;
+#' * "empenhos" -- data on transfers which the Federal Government has reserved its budget to pay the covenant when the project ends;
 #' * "desembolsos" -- data on transfers disbursements by the Federal Government;
 #' * "obtv" -- data on payments made to local suppliers and contractors hired to execute funded projects;
 #' * "historico" -- proposals' track record;
 #' * "ingresso_contrapartida" -- record of counterpart payments;
-#' * "aditivos" -- data on contracts' budget addendums;
-#' * "crono_metas" -- cronogram of project's goals;
-#' * "cronogramas" -- project's execution cronograms;
+#' * "aditivos" -- data on contracts' budget addendum;
+#' * "crono_metas" -- project's goals timeline;
+#' * "cronogramas" -- project's execution timeline;
 #' * "consorcios" -- data on proposals where multiple local governments or private entities cooperate to request federal resources;
 #' * "empenhos_desembolsos" -- keys to match appropriations and disbursements by Federal Government;
 #' * "proponentes" -- data on proposals' proponents;
-#' * "cronograma_desembolsos" -- cronogram of project's transfers disbursements;
+#' * "cronograma_desembolsos" -- project's transfers disbursements timeline;
 #' * "justificativas" -- proposals' justifications;
 #'
 #' When not specified, `dataset` defaults to "programas".
