@@ -12,6 +12,8 @@ status](https://www.r-pkg.org/badges/version/siconvr)](https://CRAN.R-project.or
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Codecov test
 coverage](https://codecov.io/gh/meirelesff/siconvr/branch/main/graph/badge.svg)](https://codecov.io/gh/meirelesff/siconvr?branch=main)
+[![Travis build
+status](https://travis-ci.com/meirelesff/siconvr.svg?branch=main)](https://travis-ci.com/meirelesff/siconvr)
 <!-- badges: end -->
 
 `siconvr` is an R package designed to fetch and clean data on federal
