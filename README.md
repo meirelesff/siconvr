@@ -126,8 +126,8 @@ We welcome any help to improve `siconvr`. In case you wish to contribute
 with code, use [GitHub Pull
 Requests](https://docs.github.com/pt/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
 – we will be more than happy to acknowledge any assistance by updating
-our contributors’ list. Bug reports and suggestions can be done via
-[GitHub issues](https://github.com/meirelesff/siconvr/issues).
+our authors’ list. Bug reports and suggestions can be done via [GitHub
+issues](https://github.com/meirelesff/siconvr/issues).
 
 ## Disclaimer
 
@@ -137,6 +137,8 @@ responsability for its uses or results.
 
 In case you want to dive deeper into Plataforma +Brasil’s sources and
 update policy, please check the following official sources:
+
+-   [Official website](http://plataformamaisbrasil.gov.br/)
 
 -   [SICONV’s working
     plan](https://static.fecam.net.br/uploads/1542/arquivos/1302090_MODULO_A_SICONV_6_PLANO_DE_TRABALHO.pdf)
