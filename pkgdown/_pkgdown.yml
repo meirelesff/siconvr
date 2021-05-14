@@ -1,0 +1,14 @@
+home:
+  title: An R package to access Plataforma +Brasil data
+  description: Scrapes and cleans data on targeted public investments in Brazil
+
+template:
+  params:
+    bootswatch: united
+    ganalytics: UA-80581604-1
+
+authors:
+  Fernando Meireles:
+    href: https://fmeireles.com/
+  Marcus Vinícius de Sá Torres:
+    href: http://marcustorresz.github.io/
