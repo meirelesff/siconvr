@@ -13,10 +13,21 @@ to \code{TRUE}.}
 \item{browser}{Should the function open a web browser to display the docs?
 Defaults to \code{TRUE}.}
 }
+\value{
+\code{show_schema()} is most usefull for its side effect of downloading,
+when needed, and opening Plataforma +Brasil's documentation, but is also silently
+returns a string containing the path to the docs' index file.
+}
 \description{
 \code{show_schema()} downloads, unzips, and show in a web browser Plataforma +Brasil's
 full database documentation, including its schema and other usefull information.
 Docs are downloaded to a folder in the working directory.
+}
+\note{
+\code{show_schema()} needs an internet connection to download data in case it
+does not found a cache folder with the docs from a previous request. Be aware that instability
+in the Plataforma +Brasil server might produce error messagens, in which case users
+should try waiting before rerunning the function.
 }
 \examples{
 \dontrun{show_schema()}

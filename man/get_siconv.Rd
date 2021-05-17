@@ -45,12 +45,23 @@ changing files' names inside this folder).}
 \item{verbose}{Should the function display messages and progress bar? Defaults
 to \code{TRUE}.}
 }
+\value{
+A \link[tibble]{tibble} contantaining the requested data as defined in the
+\code{dataset} argument. Use the \code{\link{show_schema}} function to get detailed information
+on available variables and information.
+}
 \description{
 \code{get_siconv()} is the package's workhorse. It downloads, cleans, and
 returns one of the several datasets maintained by Plataforma +Brasil on federal
 targeted transfers in Brazil. Under the hoods, the function handles GET requests,
 downloads and stores intermediary files, and reads as fast as possible the data
 to a \code{tibble} format convenient for use in analysis.
+}
+\note{
+\code{get_siconv()} needs an internet connection to download data in case it
+does not found a cache folder with raw data from a previous request. Be aware that instability
+in the Plataforma +Brasil server might produce error messagens, in which case users
+should try waiting before rerunning their requests.
 }
 \examples{
 \dontrun{df <- get_siconv(dataset = "propostas")}
