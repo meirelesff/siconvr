@@ -43,6 +43,16 @@
 #' @param verbose Should the function display messages and progress bar? Defaults
 #' to `TRUE`.
 #'
+#' @note `get_siconv()` needs an internet connection to download data in case it
+#' does not found a cache folder with raw data from a previous request. Be aware that instability
+#' in the Plataforma +Brasil server might produce error messagens, in which case users
+#' should try waiting before rerunning their requests.
+#'
+#'
+#' @return A \link[tibble]{tibble} contantaining the requested data as defined in the
+#' `dataset` argument. Use the \code{\link{show_schema}} function to get detailed information
+#' on available variables and information.
+#'
 #' @export
 #' @examples
 #' \dontrun{df <- get_siconv(dataset = "propostas")}

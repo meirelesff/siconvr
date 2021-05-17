@@ -10,6 +10,15 @@
 #' @param browser Should the function open a web browser to display the docs?
 #' Defaults to `TRUE`.
 #'
+#' @return `show_schema()` is most usefull for its side effect of downloading,
+#' when needed, and opening Plataforma +Brasil's documentation, but is also silently
+#' returns a string containing the path to the docs' index file.
+#'
+#' @note `show_schema()` needs an internet connection to download data in case it
+#' does not found a cache folder with the docs from a previous request. Be aware that instability
+#' in the Plataforma +Brasil server might produce error messagens, in which case users
+#' should try waiting before rerunning the function.
+#'
 #' @export
 #' @examples
 #' \dontrun{show_schema()}
@@ -36,7 +45,7 @@ show_schema <- function(verbose = TRUE, browser = TRUE){
   # Display them in the users' browser
   if(browser) {
 
-    if(!file.exists(docs)) stop("Failed to download Plataforma +Brasil docs.")
+    if(!file.exists(docs)) stop("Failed to download Plataforma +Brasil's docs.")
     utils::browseURL(docs)
   }
 

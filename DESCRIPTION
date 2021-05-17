@@ -9,7 +9,6 @@ Description: Scrapes and cleans data on targeted public investments from Platafo
     the responsible system to request, execute, and monitor federal discretionary transfers in Brazil.
 License: GPL (>= 3)
 Encoding: UTF-8
-LazyData: true
 URL: https://github.com/meirelesff/siconvr, https://fmeireles.com/siconvr/
 BugReports: https://github.com/meirelesff/siconvr/issues
 Roxygen: list(markdown = TRUE)
