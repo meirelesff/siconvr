@@ -1,6 +1,6 @@
 Package: siconvr
 Title: Fetch Data from Plataforma +Brasil (SICONV)
-Version: 0.0.1
+Version: 0.0.2.900
 Authors@R: c(
     person("Fernando", "Meireles", , "fmeireles@ufmg.br", c("aut", "cre"), c(ORCID = "0000-0002-7027-2058")),
     person("Marcus", "Vinícius de Sá Torres", , "marcus.torres@ufpe.br", c("aut"), c(ORCID = "0000-0002-9647-1418"))
