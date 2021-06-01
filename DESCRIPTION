@@ -16,9 +16,7 @@ RoxygenNote: 7.1.1
 Imports: 
     data.table,
     httr,
-    magrittr,
     tibble,
-    dplyr,
     cli
 Suggests: 
     testthat (>= 3.0.0),

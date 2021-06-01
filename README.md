@@ -120,6 +120,13 @@ fetching data. This can be done with:
 historico <- get_siconv("historico", verbose = FALSE)
 ```
 
+## Note
+
+Since version `0.0.2`, `siconvr` fetches data from
+`antigo.plataformamaisbrasil.gov.br`. As the Brazilian Ministry of
+Economy changed its website, old content was moved to this new
+subdomain.
+
 ## Contributing
 
 We welcome any help to improve `siconvr`. In case you wish to contribute

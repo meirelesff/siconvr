@@ -5,7 +5,7 @@ test_that("Download functions work", {
   skip_if_offline()
 
   # Download file using internal function
-  base_url <- "http://plataformamaisbrasil.gov.br/images/docs/CGSIS/csv/siconv_consorcios.csv.zip"
+  base_url <- "http://antigo.plataformamaisbrasil.gov.br/images/docs/CGSIS/csv/siconv_consorcios.csv.zip"
   dir.create("download")
   expect_silent(retrieve_siconv(base_url, "download", "teste.zip", FALSE))
 
