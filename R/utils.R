@@ -56,7 +56,8 @@ read_siconv <- function(dest_file, dest_folder, encoding){
 
   # Returns
   res <- data.table::fread(unz_arq, fill = TRUE, encoding = encoding,
-                           verbose = FALSE, integer64 = "numeric")
+                           verbose = FALSE, integer64 = "numeric",
+                           showProgress = FALSE)
   file.remove(unz_arq)
   return(res)
 }
