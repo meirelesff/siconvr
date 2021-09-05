@@ -6,6 +6,7 @@ siconv_arqs <- function(dataset){
   if(dataset == "programas") return("siconv_programa.csv.zip")
   else if(dataset == "programas_propostas") return("siconv_programa_proposta.csv.zip")
   else if(dataset == "propostas") return("siconv_proposta.csv.zip")
+  else if(dataset == "pagamento") return("siconv_pagamento.csv.zip")
   else if(dataset == "convenios") return("siconv_convenio.csv.zip")
   else if(dataset == "emendas") return("siconv_emenda.csv.zip")
   else if(dataset == "planos") return("siconv_plano_aplicacao.csv.zip")

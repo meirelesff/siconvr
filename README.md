@@ -62,6 +62,7 @@ Here a list of available datasets one can fetch using `siconvr`:
 | `programas_propostas`    | keys to match programs and proposals submitted to the Federal Government                                                                                               |
 | `propostas`              | data on proposals submitted to the Federal Government                                                                                                                  |
 | `convenios`              | data on proposals effectively accepted situation and amount transferred by the Federal Government                                                                      |
+| `pagamento`              | data on payments to local providers                                                                                                                                    |
 | `emendas`                | data on federal budget amendments made by Brazilian Federal Deputies and Senators, amount transferred and the transference recipient;                                  |
 | `planos`                 | data on application plans submitted to the Federal Government. This document includes all goods, services and works required by the covenant to accomplish the project |
 | `empenhos`               | data on transfers which the Federal Government has reserved its budget to pay the covenant when the project ends                                                       |
