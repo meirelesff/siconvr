@@ -29,7 +29,7 @@ show_schema <- function(verbose = TRUE, browser = TRUE){
   if(!is.logical(verbose)) stop("'verbose' must be logical.")
 
   # URL, file, folder
-  link <- "http://antigo.plataformamaisbrasil.gov.br/images/docs/CGSIS/modelo_dados_siconv.zip"
+  link <- "https://repositorio.dados.gov.br/seges/detru/modelo_dados_siconv.zip"
   dest_folder <- "siconvr_docs"
   arq <- "siconvr_docs.zip"
   docs <- file.path(dest_folder, "/Modelo BD Portal/", "index.html")
