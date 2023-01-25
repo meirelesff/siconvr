@@ -23,6 +23,18 @@ siconv_arqs <- function(dataset){
   else if(dataset == "proponentes") return("siconv_proponentes.csv.zip")
   else if(dataset == "cronograma_desembolsos") return("siconv_cronograma_desembolso.csv.zip")
   else if(dataset == "justificativas") return("siconv_justificativas_proposta.csv.zip")
+#New datasets added in 2022
+  else if(dataset == "historico_projeto_basico") return("siconv_historico_projeto_basico.csv.zip")
+  else if(dataset == "desbloqueio_cr") return("siconv_desbloqueio_cr.csv.zip")
+  else if(dataset == "licitacao") return("siconv_licitacao.csv.zip")
+  else if(dataset == "prorroga_oficio") return("siconv_prorroga_oficio.csv.zip")
+  else if(dataset == "termo_aditivo") return("siconv_termo_aditivo.csv.zip")
+#Those are also part of the 2022 group, but they are more than one in an only zip.
+    #1. siconv_acomp_obras_mod_empresas.csv.zip            (2 csvs)
+    #2. siconv_inst_cont_aio_mod_empresas.csv.zip         (3 csvs)
+    #3. siconv_projeto_basico_mod_empresas.csv.zip        (5csvs)
+    #4. siconv_vrpl_mod_empresas.csv.zip                   (3 csvs)
+    
   else return("Invalid")
 }
 
@@ -32,7 +44,7 @@ retrieve_siconv <- function(link, dest_folder, arq, verbose){
   dest_file <- file.path(dest_folder, arq)
 
   if(verbose){
-    siconv_url <- "http://antigo.plataformamaisbrasil.gov.br/"
+    siconv_url <- "https://repositorio.dados.gov.br/seges/detru/"
     cli::cli_alert_info("Downloading files from {.url {siconv_url}}")
     x <- httr::GET(link, httr::write_disk(dest_file, overwrite = TRUE),
                    httr::progress("down"))
