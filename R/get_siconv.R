@@ -65,7 +65,7 @@ get_siconv <- function(dataset = NULL, encoding = "UTF-8", cache = TRUE, verbose
   if(!is.logical(cache)) stop("'cache' must be logical.")
 
   # URLs
-  base_url <- "http://antigo.plataformamaisbrasil.gov.br/images/docs/CGSIS/csv/"
+  base_url <- "https://repositorio.dados.gov.br/seges/detru/"
   arq <- siconv_arqs(dataset)
   if(arq == "Invalid") stop("Invalid 'dataset' argument. Please, check the documentation and try again.")
   link <- paste0(base_url, arq)
